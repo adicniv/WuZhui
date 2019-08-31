@@ -12,12 +12,34 @@
 <body>
 <!-- 顶部固定 -->
 <div id="status" class="navbar navbar-fixed-top hidden-phone">
-		<div class="btn-toolbar">
-			<div class="btn-group pull-right">
-				<p>
-						Joomla! 3.9.1	&nbsp;—&nbsp;
-					© 2019 Are				</p>
-		</div>
+		<ul class="nav nav-user pull-right nav-hover">
+					<li class="dropdown open">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							<span class="">+</span>
+							
+							<div class="element-invisible">
+								会员菜单							
+							</div>
+						</a>
+						<ul class="dropdown-menu">
+								<li>
+									<a href="index.php?option=com_admin&amp;task=profile.edit&amp;id=682">发起群聊</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="index.php?option=com_admin&amp;task=profile.edit&amp;id=682">添加朋友</a>
+								</li>
+								<li class="divider"></li>
+								<li class="">
+									<a href="/administrator/index.php?option=com_login&amp;task=logout&amp;cb99ccddc195e07e8f269e82a4a75545=1">扫一扫</a>
+								</li>
+								<li class="divider"></li>
+								<li class="">
+									<a href="/administrator/index.php?option=com_login&amp;task=logout&amp;cb99ccddc195e07e8f269e82a4a75545=1">收付款</a>
+								</li>
+						</ul>
+					</li>
+		</ul>
 </div>
 <!-- 底部固定 -->
 <div id="status" class="navbar navbar-fixed-bottom hidden-phone">
@@ -320,7 +342,22 @@
 				</div>		
 		
 				<div id="attrib-basic" class="tab-pane active">
-		
+<ul class="dropdown-menu scroll-menu" style="width: auto; max-height: 571px;">
+<li class="dropdown-submenu"><a class="dropdown-toggle menu-article" data-toggle="dropdown" href="index.php?option=com_content">文章管理</a><ul class="dropdown-menu menu-scrollable" style="display: none;">
+<li><a class="no-dropdown menu-newarticle" href="index.php?option=com_content&amp;task=article.add">添加新文章</a></li>
+</ul>
+</li>
+<li class="dropdown-submenu"><a class="dropdown-toggle menu-category" data-toggle="dropdown" href="index.php?option=com_categories&amp;extension=com_content">文章分类管理</a><ul class="dropdown-menu menu-scrollable" style="display: none;">
+<li><a class="no-dropdown menu-newarticle" href="index.php?option=com_categories&amp;task=category.add&amp;extension=com_content">添加新分类</a></li>
+</ul>
+</li>
+<li><a class="no-dropdown menu-featured" href="index.php?option=com_content&amp;view=featured">精选文章管理</a></li>
+<li class="divider"><span></span></li>
+<li><a class="no-dropdown menu-fields" href="index.php?option=com_fields&amp;context=com_content.article">自定义字段管理</a></li>
+<li><a class="no-dropdown menu-category" href="index.php?option=com_fields&amp;view=groups&amp;context=com_content.article">自定义字段组管理</a></li>
+<li class="divider"><span></span></li>
+<li><a class="no-dropdown menu-media" href="index.php?option=com_media">多媒体文件管理</a></li>
+</ul>		
 				</div>
 		
 				<div id="publishing" class="tab-pane">
