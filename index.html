@@ -337,17 +337,6 @@
 				<div id="publishing" class="tab-pane"><div class="span6">
 							
 <fieldset class="form-horizontal">
-	<legend>网站设置</legend>
-			<div class="control-group">
-					<div class="control-label">
-						<label id="jform_sitename-lbl" for="jform_sitename" class="hasPopover required" title="" data-content="很多地方会用到网站名称 (例如：管理后台页面 title ；“网站维护关闭前台访问”系统默认的系统维护页面等)." data-original-title="网站名称">
-						网站名称<span class="">&nbsp;*</span>
-						</label>
-					</div>
-					<div class="controls">
-					<input type="text" name="jform[sitename]" id="jform_sitename" value="Are" class="required" size="50" required="required" aria-required="true">
-					</div>
-			</div>
 			<div class="control-group">
 				<div class="control-label">
 					<label id="jform_offline-lbl" for="jform_offline" class="hasPopover" title="" data-content="是否仅限网站维护并关闭网站前台访问. 如果设置为 “是”, 网站维护期间，不可访问网站前台内容，显示下面 “网站维护信息” 中设置的内容。" data-original-title="网站维护并关闭前台访问">
@@ -368,215 +357,9 @@
 					</fieldset>
 				</div>
 			</div>
-			<div class="control-group" data-showon="[{&quot;field&quot;:&quot;jform[offline]&quot;,&quot;values&quot;:[&quot;1&quot;],&quot;sign&quot;:&quot;=&quot;,&quot;op&quot;:&quot;&quot;}]" style="display: none;">
-				<div class="control-label">
-					<label id="jform_display_offline_message-lbl" for="jform_display_offline_message" class="hasPopover" title="" data-content="当网站处于维护状态时，是否在网站前台显示网站维护信息. 选择 “使用自定义维护信息” 使用的是下面 “自定义维护信息” 中输入的内容. 选择“使用语言文件默认信息” 使用的是在网站前台语言 ini 文件(例如：zh-CN.ini 中 JOFFLINE_MESSAGE=“网站正在维护<br /> 请稍候访问。”)中定义的信息." data-original-title="网站维护信息">
-					网站维护信息</label>
-				</div>
-				<div class="controls">
-					<select id="jform_display_offline_message" name="jform[display_offline_message]" style="display: none;">
-						<option value="0">不显示</option>
-						<option value="1" selected="selected">使用自定义维护信息</option>
-						<option value="2">使用语言文件默认信息</option>
-					</select>
-					<div class="chzn-container chzn-container-single chzn-container-single-nosearch" style="width: 220px;" title="" id="jform_display_offline_message_chzn">
-						<a class="chzn-single">
-							<span>使用自定义维护信息</span>
-							<div><b></b></div>
-						</a>
-						<div class="chzn-drop">
-							<div class="chzn-search">
-								<input type="text" autocomplete="off" readonly="">
-							</div>
-							<ul class="chzn-results"></ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="control-group" data-showon="[{&quot;field&quot;:&quot;jform[offline]&quot;,&quot;values&quot;:[&quot;1&quot;],&quot;sign&quot;:&quot;=&quot;,&quot;op&quot;:&quot;&quot;},{&quot;field&quot;:&quot;jform[display_offline_message]&quot;,&quot;values&quot;:[&quot;1&quot;],&quot;sign&quot;:&quot;=&quot;,&quot;op&quot;:&quot;AND&quot;}]" style="display: none;">
-				<div class="control-label">
-					<label id="jform_offline_message-lbl" for="jform_offline_message" class="hasPopover" title="" data-content="如果 “网站维护信息” 设置为 “自定义维护信息”，这里定义的信息将在 “系统维护关闭前台访问” 设置为 “是” 时显示在网站默认的系统维护页面。 " data-original-title="自定义维护信息">
-					自定义维护信息
-					</label>
-				</div>
-				<div class="controls"><textarea name="jform[offline_message]" id="jform_offline_message" cols="60" rows="2">网站正在维护。&lt;br /&gt; 请稍候访问。</textarea></div>
-			</div>
-			<div class="control-group" data-showon="[{&quot;field&quot;:&quot;jform[offline]&quot;,&quot;values&quot;:[&quot;1&quot;],&quot;sign&quot;:&quot;=&quot;,&quot;op&quot;:&quot;&quot;}]" style="display: none;">
-				<div class="control-label">
-					<label id="jform_offline_image-lbl" for="jform_offline_image" class="hasPopover" title="" data-content="可选项。 “网站维护并关闭前台访问” 设置为 “是” 时显示在网站默认系统维护页面的图片。 图片宽度应小于 400px." data-original-title="选择网站维护图片">
-					选择网站维护图片
-					</label>
-				</div>
-				<div class="controls">
-					<div class="field-media-wrapper" data-basepath="https://adicniv.cn/" data-url="index.php?option=com_media&amp;view=images&amp;tmpl=component&amp;asset=1&amp;author=&amp;fieldid={field-media-id}&amp;ismoo=0&amp;folder=" data-modal=".modal" data-modal-width="100%" data-modal-height="400px" data-input=".field-media-input" data-button-select=".button-select" data-button-clear=".button-clear" data-button-save-selected=".button-save-selected" data-preview="true" data-preview-as-tooltip="true" data-preview-container=".field-media-preview" data-preview-width="200" data-preview-height="200">
-						<div id="imageModal_jform_offline_image" tabindex="-1" class="modal hide fade">
-							<div class="modal-header">
-								<button type="button" class="close novalidate" data-dismiss="modal">×</button>
-								<h3>更换图片</h3>
-							</div>
-							<div class="modal-body">
-							</div>
-							<div class="modal-footer">
-								<a class="btn" data-dismiss="modal">取消</a>
-							</div>
-						</div>
-						<div class="input-prepend input-append">
-							<span rel="popover" class="add-on pop-helper field-media-preview" title="" data-content="没有选择图片" data-original-title="选择的图片" data-trigger="hover">
-								<span class="icon-eye" aria-hidden="true"></span>
-							</span>
-							<input type="text" name="jform[offline_image]" id="jform_offline_image" value="" readonly="readonly" class="input-small hasTooltip field-media-input" data-original-title="" title="">
-							<a class="btn add-on button-select">选择</a>
-							<a class="btn icon-remove hasTooltip add-on button-clear" title="" data-original-title="清除"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
-				<div class="control-label"><label id="jform_frontediting-lbl" for="jform_frontediting" class="hasPopover" title="" data-content="是否在模块和菜单项使用行内编辑 (需要模板支持；并且具有编辑权限的会员才能使用此功能。)" data-original-title="行内编辑">
-	行内编辑</label>
-				</div>
-				<div class="controls">
-					<select id="jform_frontediting" name="jform[frontediting]" style="display: none;">
-						<option value="2">模块 &amp; 菜单项</option>
-						<option value="1" selected="selected">仅限模块</option>
-						<option value="0">无</option>
-					</select>
-					<div class="chzn-container chzn-container-single chzn-container-single-nosearch" style="width: 120px;" title="" id="jform_frontediting_chzn">
-						<a class="chzn-single"><span>仅限模块</span><div><b></b></div></a>
-						<div class="chzn-drop">
-							<div class="chzn-search">
-								<input type="text" autocomplete="off" readonly="">
-							</div>
-							<ul class="chzn-results"></ul>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="control-group">
-				<div class="control-label"><label id="jform_editor-lbl" for="jform_editor" class="hasPopover" title="" data-content="选择网站默认使用的文本编辑器. 如果网站允许，注册会员可以在在他们的个人资料中根据偏好更改他们自己使用的编辑器" data-original-title="默认编辑器">
-	默认编辑器</label>
-				</div>
-				<div class="controls">
-					<select id="jform_editor" name="jform[editor]" style="display: none;">
-						<option value="codemirror">编辑器 - CodeMirror 代码编辑器</option>
-						<option value="none" selected="selected">编辑器 - 不使用编辑器</option>
-						<option value="tinymce">编辑器 - TinyMCE 编辑器</option>
-					</select>
-				<div class="chzn-container chzn-container-single chzn-container-single-nosearch" style="width: 120px;" title="" id="jform_editor_chzn"><a class="chzn-single"><span>编辑器 - 不使用编辑器</span><div><b></b></div></a><div class="chzn-drop"><div class="chzn-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chzn-results"></ul></div></div>
-				</div>
-			</div>
-				<div class="control-group">
-					<div class="control-label"><label id="jform_captcha-lbl" for="jform_captcha" class="hasPopover" title="" data-content="选择网站默认使用的校验码. 可能需要在“插件管理”中设置验证码插件，输入在验证码插件要求的信息。" data-original-title="默认校验码">
-	默认校验码</label>
-					</div>
-					<div class="controls">
-						<select id="jform_captcha" name="" disabled="disabled" style="display: none;">
-							<option value="0" selected="selected">- 不使用 -</option>
-						</select>
-						<div class="chzn-container chzn-container-single chzn-container-single-nosearch chzn-disabled" style="width: 120px;" title="" id="jform_captcha_chzn"><a class="chzn-single"><span>- 不使用 -</span><div><b></b></div></a><div class="chzn-drop"><div class="chzn-search"><input type="text" autocomplete="off" readonly="" disabled=""></div><ul class="chzn-results"></ul></div></div>
-						<input type="hidden" name="jform[captcha]" value="0">
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label"><label id="jform_access-lbl" for="jform_access" class="hasPopover" title="" data-content="选择网站新增的内容、菜单项或其它内容默认的访问级别" data-original-title="默认访问级别">
-	默认访问级别</label>
-					</div>
-					<div class="controls">
-						<select id="jform_access" name="jform[access]" style="display: none;">
-							<option value="1">Public</option>
-							<option value="5">Guest</option>
-							<option value="2" selected="selected">Registered</option>
-							<option value="3">Special</option>
-							<option value="6">Super Users</option>
-						</select>		
-						<div class="chzn-container chzn-container-single chzn-container-single-nosearch" style="width: 120px;" title="" id="jform_access_chzn"><a class="chzn-single"><span>Registered</span><div><b></b></div></a><div class="chzn-drop"><div class="chzn-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chzn-results"></ul></div></div>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label"><label id="jform_list_limit-lbl" for="jform_list_limit" class="hasPopover" title="" data-content="设置在管理后台以列表显示内容时默认一屏显示的内容条数，此设置对全部会员有效。" data-original-title="默认列表显示条数">
-	默认列表显示条数</label>
-</div>
-					<div class="controls">
-						<select id="jform_list_limit" name="jform[list_limit]" style="display: none;">
-							<option value="5">5</option>
-							<option value="10">10</option>
-							<option value="15">15</option>
-							<option value="20" selected="selected">20</option>
-							<option value="25">25</option>
-							<option value="30">30</option>
-							<option value="50">50</option>
-							<option value="100">100</option>
-							<option value="200">200</option>
-							<option value="500">500</option>
-						</select>
-					<div class="chzn-container chzn-container-single chzn-container-single-nosearch" style="width: 120px;" title="" id="jform_list_limit_chzn"><a class="chzn-single"><span>20</span><div><b></b></div></a><div class="chzn-drop"><div class="chzn-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chzn-results"></ul></div></div>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label"><label id="jform_feed_limit-lbl" for="jform_feed_limit" class="hasPopover" title="" data-content="在网站对外提供推送新闻(news Feeds)时呈现的最大内容条数" data-original-title="默认推送新闻条数">
-	默认推送新闻条数</label>
-					</div>
-					<div class="controls"><select id="jform_feed_limit" name="jform[feed_limit]" style="display: none;">
-						<option value="5">5</option>
-						<option value="10" selected="selected">10</option>
-						<option value="15">15</option>
-						<option value="20">20</option>
-						<option value="25">25</option>
-						<option value="30">30</option>
-						<option value="50">50</option>
-						<option value="100">100</option>
-						</select>
-						<div class="chzn-container chzn-container-single chzn-container-single-nosearch" style="width: 120px;" title="" id="jform_feed_limit_chzn"><a class="chzn-single"><span>10</span><div><b></b></div></a><div class="chzn-drop"><div class="chzn-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chzn-results"></ul></div></div>
-					</div>
-				</div>
-				<div class="control-group">
-					<div class="control-label"><label id="jform_feed_email-lbl" for="jform_feed_email" class="hasPopover" title="" data-content="使用 RSS 和 Atom 推送新闻时显示的邮件地址。 选择 “作者邮件地址” 将在每个中显示会员管理中设置的会员邮件地址. 选择 “网站邮件地址” 新闻推送中的每篇文章使用网站 “全局设置” 中 “邮件设置” 的 “邮件地址” 设置的邮件地址." data-original-title="新闻推送邮件地址">
-	新闻推送邮件地址</label>
-				</div>
-					<div class="controls">
-						<select id="jform_feed_email" name="jform[feed_email]" style="display: none;">
-							<option value="author">作者邮件地址</option>
-							<option value="site">网站邮件地址</option>
-							<option value="none" selected="selected">不显示邮件地址</option>
-						</select>
-						<div class="chzn-container chzn-container-single chzn-container-single-nosearch" style="width: 120px;" title="" id="jform_feed_email_chzn"><a class="chzn-single"><span>不显示邮件地址</span><div><b></b></div></a><div class="chzn-drop"><div class="chzn-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chzn-results"></ul></div></div>
-					</div>
-				</div>
 </fieldset>
 							
 <fieldset class="form-horizontal">
-	<legend>元数据(Metadata)设置</legend>
-		<div class="control-group">
-				<div class="control-label"><label id="jform_MetaDesc-lbl" for="jform_MetaDesc" class="hasPopover" title="" data-content="用一句话描述你的网站，此描述用于搜索引擎抓取和显示. 通常, 英文使用20个词左右是最佳，中文则是80个左右中文最佳(搜索引擎显示两行的长度)." data-original-title="网站元描述<br />(Meta description)">
-	网站元描述<br>(Meta description)</label>
-				</div>
-				<div class="controls"><textarea name="jform[MetaDesc]" id="jform_MetaDesc" cols="60" rows="3"></textarea></div>
-		</div>
-		<div class="control-group">
-			<div class="control-label"><label id="jform_MetaKeys-lbl" for="jform_MetaKeys" class="hasPopover" title="" data-content="输入可以描述你的网站关键词和短语 . 关键字之间使用小写的逗号隔开" data-original-title="网站元关键字<br />(Meta Keywords)">
-	网站元关键字<br>(Meta Keywords)</label>
-			</div>
-			<div class="controls"><textarea name="jform[MetaKeys]" id="jform_MetaKeys" cols="60" rows="3"></textarea></div>
-			</div>
-			<div class="control-group">
-				<div class="control-label"><label id="jform_robots-lbl" for="jform_robots" class="hasTooltip" title="" data-original-title="<strong>搜索引擎抓取规则</strong>">
-	搜索引擎抓取规则</label>
-				</div>
-				<div class="controls"><select id="jform_robots" name="jform[robots]" style="display: none;">
-	<option value="" selected="selected">索引,跟踪(Index, Follow)</option>
-	<option value="noindex, follow">不索引,跟踪(No index, follow)</option>
-	<option value="index, nofollow">索引,不跟踪(Index, No follow)</option>
-	<option value="noindex, nofollow">不索引,不跟踪(No index, no follow)</option>
-</select>		
-				<div class="chzn-container chzn-container-single chzn-container-single-nosearch" style="width: 120px;" title="" id="jform_robots_chzn"><a class="chzn-single"><span>索引,跟踪(Index, Follow)</span><div><b></b></div></a><div class="chzn-drop"><div class="chzn-search"><input type="text" autocomplete="off" readonly=""></div><ul class="chzn-results"></ul></div></div>
-				</div>
-			</div>
-				<div class="control-group">
-					<div class="control-label"><label id="jform_MetaRights-lbl" for="jform_MetaRights" class="hasPopover" title="" data-content="内容的权限描述，用于说明其他人可以如何使用此内容." data-original-title="版权信息">
-	版权信息</label>
-					</div>
-					<div class="controls"><textarea name="jform[MetaRights]" id="jform_MetaRights" cols="60" rows="2"></textarea></div>
-				</div>
 				<div class="control-group">
 					<div class="control-label"><label id="jform_MetaAuthor-lbl" for="jform_MetaAuthor" class="hasPopover" title="" data-content="显示文章时是否使用 author 元标签显示文章作者" data-original-title="用author元标签<br />显示 文章 作者">
 	用author元标签<br>显示 文章 作者</label>
@@ -600,14 +383,14 @@
 	在generator元标签<br>中显示Joomla!版本</label>
 					</div>
 					<div class="controls">
-					<fieldset id="jform_MetaVersion" class="btn-group btn-group-yesno radio">
-
+					<fieldset id="jform_MetaVersion" class="btn-group btn-group-yesno radio">						
+						<input type="radio" id="jform_MetaVersion0" name="jform[MetaVersion]" value="1">			
+								<label for="jform_MetaVersion0" class="btn">
+					是			</label>
 						
-					<input type="radio" id="jform_MetaVersion0" name="jform[MetaVersion]" value="1">			<label for="jform_MetaVersion0" class="btn">
-				是			</label>
-					
-					<input type="radio" id="jform_MetaVersion1" name="jform[MetaVersion]" value="0" checked="checked">			<label for="jform_MetaVersion1" class="btn active btn-danger">
-				否			</label>
+						<input type="radio" id="jform_MetaVersion1" name="jform[MetaVersion]" value="0" checked="checked">			
+								<label for="jform_MetaVersion1" class="btn active btn-danger">
+					否			</label>
 					</fieldset>
 					</div>
 				</div>
